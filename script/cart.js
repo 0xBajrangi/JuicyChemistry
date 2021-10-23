@@ -3,6 +3,7 @@ let shoping_cart = JSON.parse(localStorage.getItem("cart"))
 function showCartItems(shoping_cart) {
     let parent = document.getElementById("shoping-cart");
     if (shoping_cart === null) {
+          parent.innerHTML = null
         return;
     }
     if (parent.innerHTML != null) {
