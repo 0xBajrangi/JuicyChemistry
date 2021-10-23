@@ -30,4 +30,8 @@ follow this steps to get the flow of the project
 warning :- if you not include any fiild it may show error in the console
 10.at the last page you can add a coupon get30 to get 30% off on purchase at the last page
 11.after proceeding further you can complete the order .
-12 after 3-5 you will get a pop up of successfull pop up ;].
+12 after 3-5 you will get a pop up of successfull pop up.
+
+
+I-all nav links will direct to the same pagel
+II-input all the info wherever asked other a error in console may show
