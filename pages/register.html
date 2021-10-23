@@ -107,14 +107,31 @@
               </li>
           </ul>
        </div>
-       <div class="center-nav"><img src="../img/JC_Logo_NewWeb_B_250x.png" alt="" onclick="home()"></div>
+       <div class="center-nav"><img onclick="home()" src="../img/JC_Logo_NewWeb_B_250x.png" alt="" onclick="home()"></div>
        <div class="right-nav">
             <i class="fas fa-search"></i>
                 <i class="fas fa-user"></i>
                 <i class="fas fa-shopping-bag" onclick="showCart()"></i>
-                <div class="cart-btn">
-                    <div id="cart-head"><div>Your shoping cart</div><div><i class="fas fa-times" onclick="closeCart()" ></i></div></div>
+                <div class="cart-pop" >
+                  <div class="cart-btn">
+                    <div id="cart-head" style="border-bottom: 1px solid lightgray;"><div>Your shoping cart</div><div><i class="fas fa-times" onclick="closeCart()" ></i></div></div>
                     <!-- cart data  -->
+                    <div id="shoping-cart" style="overflow: scroll;">
+
+                        
+                    </div>
+                    <div id="bottom-cart">
+                      <input type="text">
+                      <button onclick="applycode()">Apply</button>
+                      <div id="total-div">
+                        <p style="display: inline-block;width: 70%;">Total </p>
+                        <p id="total"></p>
+                      </div>
+                      <div onclick="gotoCheckout()" class="check-out-btn">checkOut</div>
+                    </div>
+
+                       <!-- shoping cart data -->
+                </div>
                 </div>
        </div>
     </nav>

@@ -376,6 +376,7 @@ function filter(e) {
     });
     showproducts(arr);
      filter_cat.classList.remove("active-filter")
+  filter_pop.classList.remove("active-filter");
 
 
 }
@@ -384,13 +385,20 @@ function filter(e) {
 
 //opening and closing filter
 
-let filter_cat = document.querySelector(".filter-cat")
+let filter_cat = document.querySelector(".filter-cat");
+let filter_pop = document.querySelector(".filter-pop");
 function openfilter() {
-    filter_cat.classList.add("active-filter")
+  filter_cat.classList.add("active-filter");
+  filter_pop.classList.add("active-filter");
+
+
+  
 } 
 
 function closefilter() {
-    filter_cat.classList.remove("active-filter")
+  filter_cat.classList.remove("active-filter");
+  filter_pop.classList.remove("active-filter");
+  
 } 
 
 

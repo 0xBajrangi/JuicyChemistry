@@ -7,5 +7,9 @@ function products() {
 }
 
 function home() {
-    window.location.href = "../home.html";
+    window.location.href = "../index.html";
+}
+
+function gotocheck(){
+    window.location.href = "pages/checkout.html";
 }

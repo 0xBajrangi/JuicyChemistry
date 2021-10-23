@@ -93,16 +93,21 @@ document.getElementById("shipping").innerHTML = JSON.parse(localStorage.getItem(
 
 //display pop-up
 let complete = document.getElementById("pop");
-console.log(complete)
+let pop = document.querySelector(".complete-pop");
+
 function orderPlaced() {
     setTimeout(function() {
         complete.classList.add("active-popup");
+        pop.classList.add("active-popup");
+
     window.location.href = "#top"
     }, 3000);
 }
 
 complete.addEventListener("click", function () {
     complete.classList.remove("active-popup");
+        pop.classList.remove("active-popup");
+
     localStorage.removeItem("cart");
     window.location.href = "../index.html"
 })

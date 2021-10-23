@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
@@ -35,7 +34,7 @@
     
     <title>homepage</title>
 </head>
-<body onload="show()">
+<body  class="" id="body">
 <!-- nav -->
       <!-- navigation -->
 
@@ -134,7 +133,8 @@
             <i class="fas fa-search"></i>
                 <i class="fas fa-user" onclick="login()"></i>
                 <i class="fas fa-shopping-bag" onclick="showCart()"></i>
-                <div class="cart-btn">
+                <div class="cart-pop" >
+                  <div class="cart-btn">
                     <div id="cart-head" style="border-bottom: 1px solid lightgray;"><div>Your shoping cart</div><div><i class="fas fa-times" onclick="closeCart()" ></i></div></div>
                     <!-- cart data  -->
                     <div id="shoping-cart" style="overflow: scroll;">
@@ -148,10 +148,11 @@
                         <p style="display: inline-block;width: 70%;">Total </p>
                         <p id="total"></p>
                       </div>
-                      <div onclick="gotoCheckout()" class="check-out-btn">checkOut</div>
+                      <div onclick="gotocheck()" class="check-out-btn">checkout</div>
                     </div>
 
                        <!-- shoping cart data -->
+                </div>
                 </div>
        </div>
     </nav>
@@ -240,94 +241,7 @@
 
 
 
-    <!-- ----------------------------------------- -->
-      <div class="parent">
-
-        <!-- leftArrow -->
-
-        <div onclick="moveLeft()">
-        <button class="arrow leftArrow"><span style='font-size:20px;'>&#8592;</span></button>
-        </div>
-
-        <!-- images -->
-        <div class="child" id="c1">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Deccan_Chronicle_300x_f0f46cec-c0ec-49ee-a5fb-40ac040d8575.png?v=1629036985" alt="">
-        </div>
-        <div class="child" id="c2">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Bazaar_300x_01612d6b-d491-4b76-8347-188405a546ef.png?v=1629036985" alt="">
-        </div>
-        <div class="child" id="c3">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/ET_300x_a8406453-f562-4a5b-bee6-db918ca79a3d.png?v=1629036985" alt="">
-        </div>
-        <div class="child" id="c4">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Forbes_300x_37f2babe-1248-4a2c-8572-afdfe6354e02.png?v=1629037302" alt="">
-        </div>
-        <div class="child" id="c5">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Verve_logo_png_300x_1751cbe9-9ab1-4b44-aeb8-fb198b71385e.png?v=1629037302" alt="">
-        </div>
-        <div class="child" id="c6">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/femina_wedding_times_300x_89044c6f-5fd3-4187-b9e1-072b6976c8c3.png?v=1629037301" alt="">
-        </div>
-        <div class="child" id="c7">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Cosmopolitan_300x_8973cb3e-41e9-4261-ab4b-21107f7a56cd.png?v=1629037301" alt="">
-        </div>
-        <div class="child" id="c8">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/products/800x1_9213d9f3-2055-4d38-a00d-c4814e91f9ad_400x.png?v=1629142791" alt="">
-        </div>
-        <div class="child" id="c9">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/products/Shampoobaobab_400x.jpg?v=1629202930" alt="">
-        </div>
-        <div class="child" id="c10">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/products/800x1_e2dc9da0-b02e-4df4-9279-e19772ef77f6_400x.png?v=1629142548" alt="">
-        </div>
-        <div class="child" id="c11">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/products/HairMasksachainchi_400x.jpg?v=1629176640" alt="">
-        </div>
-        <div class="child" id="c12">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/products/Hibiscus_Onion_400x.png?v=1629403038" alt="">
-        </div>
-        <div class="child" id="c13">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/products/800x1_c6fa38de-6338-4b9e-ae33-74de46d48046_600x.png?v=1629135634" alt="">
-        </div>
-        <div class="child" id="c14">
-            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/products/Deodorantbloodorange_600x.jpg?v=1629199022" alt="">
-        </div> 
-
-         <!-- right arrow -->
-
-        <div onclick="moveRight()">
-        <button class="arrow rightArrow"><span style='font-size:20px;'>&#8594;</span></button>
-        </div>                 
-        
- 
-            <!-- javascript files -->
-
-            <script src="slide.js"></script>
-
-    </div>
-    <br>
-
-        <!-- dots -->
-
-        <div style="text-align:center">
-
-            <span class="dot" onclick="d1"></span>
-            <span class="dot" onclick="d2"></span>
-            <span class="dot" onclick="d3"></span>
-            <span class="dot" onclick="d4"></span>
-            <span class="dot" onclick="d5"></span>
-            <span class="dot" onclick="d6"></span>
-            <span class="dot" onclick="d7"></span>
-
-            <!-- <span class="dot" onclick="d8"></span>
-            <span class="dot" onclick="d9"></span>
-            <span class="dot" onclick="d10"></span>
-            <span class="dot" onclick="d11"></span>
-            <span class="dot" onclick="d12"></span> -->
-
-        </div>
-
-
+    
 <!-- ------------------------------------------ -->
 
 
@@ -614,9 +528,8 @@
     </div>
   </footer>
   <script src="script/response-nav.js"></script>
-  <script src="cart.js"></script>
+  <script src="script/cart.js"></script>
   <script src="script/onclick.js"></script>
-  <script src="/script/slide.js"></script>
 
 
 

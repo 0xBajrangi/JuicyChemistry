@@ -117,12 +117,13 @@
               </li>
           </ul>
        </div>
-       <div class="center-nav"><img src="../img/JC_Logo_NewWeb_B_250x.png" alt=""></div>
+       <div class="center-nav"><img onclick="home()" src="../img/JC_Logo_NewWeb_B_250x.png" alt=""></div>
        <div class="right-nav">
             <i class="fas fa-search"></i>
                 <i class="fas fa-user"></i>
                 <i class="fas fa-shopping-bag" onclick="showCart()"></i>
-                <div class="cart-btn">
+                <div class="cart-pop" >
+                  <div class="cart-btn">
                     <div id="cart-head" style="border-bottom: 1px solid lightgray;"><div>Your shoping cart</div><div><i class="fas fa-times" onclick="closeCart()" ></i></div></div>
                     <!-- cart data  -->
                     <div id="shoping-cart" style="overflow: scroll;">
@@ -140,6 +141,7 @@
                     </div>
 
                        <!-- shoping cart data -->
+                </div>
                 </div>
        </div>
     </nav>
@@ -170,6 +172,7 @@
     
   </div>
 </center>
+<div class="filter-pop">
 <div class="filter-cat" >
   <div> 
     <div id="cart-head" style="margin-top:-10px ;border-bottom: 1px solid lightgray;"><div style="margin-left:50px;color: grey;">Filter</div><div><i class="fas fa-times" onclick="closefilter()" ></i></div></div>
@@ -227,6 +230,8 @@
          <input type="submit" name="" id="apply-filter" value="Apply" style="width: 350px; height: 50px; color: white;">
        </div>
 
+       </div>
+
 
 
 
@@ -245,6 +250,7 @@
   
   <br>
   <br>
+  <!-- show products -->
     <div id="products" style="margin-bottom: 200px;"></div>
   
 
@@ -353,6 +359,7 @@
 <script src="../script/response-nav.js"></script>
 <script src="../script/products.js"></script>
 <script src="../script/cart.js"></script>
+  <script src="../script/onclick.js"></script>
 
 
 </body>

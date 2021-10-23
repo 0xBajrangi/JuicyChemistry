@@ -2,7 +2,10 @@ let shoping_cart = JSON.parse(localStorage.getItem("cart"))
 
 function showCartItems(shoping_cart) {
     let parent = document.getElementById("shoping-cart");
-    parent.innerHTML = null
+    if (parent.innerHTML != null) {
+        parent.innerHTML = null
+        
+    }
     let total = 0;
     if (shoping_cart.length != 0) {
         document.getElementById("bottom-cart").style.display = "block";
