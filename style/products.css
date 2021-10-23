@@ -238,7 +238,10 @@ margin-left: 20px;
         .class-product-img{
           width: 100%;
             height: 350px;
+            cursor: pointer;
+
         }
+
         .class-product-button{
 
           width: 70%;
@@ -249,10 +252,13 @@ margin-left: 20px;
          font-size: 15px;
          border: 1px solid black;
          font-weight: 50;
+    
+
          
         }
         .class-product-button:hover  {
         background-color: #204e3c;
+          transition-delay: 1s;
          width:70%;
          
         }

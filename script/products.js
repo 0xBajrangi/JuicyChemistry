@@ -170,7 +170,7 @@ function showproducts(d) {
 parent_curr.innerHTML =null;
 
 d.forEach(function (product) {
-      console.log(product.name);
+      // console.log(product.name);
 
 let div = document.createElement("div");
 div.id ="id-product-content";

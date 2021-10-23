@@ -2,7 +2,7 @@
 
 let data_curr = [];
 data_curr.push(JSON.parse(localStorage.getItem("Product")));
-console.log(data_curr)
+// console.log(data_curr)
 
 let images=[
  {img: "https://cdn.shopify.com/s/files/1/0058/7779/2832/files/PPI_A-01.png?v=1630740719",
@@ -43,7 +43,7 @@ function showproducts() {
 parent_prod.innerHTML =null;
 
 data_curr.forEach(function (product) {
-      console.log(product.name);
+      // console.log(product.name);
 
 let div_img = document.createElement("div");
 div_img.id ="id-product-content";

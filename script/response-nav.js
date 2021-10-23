@@ -31,7 +31,7 @@ function showCart() {
 
     pop.classList.add("active");
 
-    console.log(pop);
+    // console.log(pop);
     // blur.classList.add("blur");
     
 }
