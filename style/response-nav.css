@@ -44,6 +44,7 @@
 }
 .center-nav img{
     display: inline-block;
+    cursor: pointer;
     width: 250px;
     height: 75px;
 }

@@ -47,6 +47,7 @@
     display: inline-block;
     width: 250px;
     height: 75px;
+    cursor: pointer;
 }
 .left-nav{
     grid-area: 2/1/3/4;
