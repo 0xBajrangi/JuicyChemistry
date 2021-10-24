@@ -39,10 +39,13 @@
        
        
         .class-product-name{
-          font-size: 40px;
-           color: #204e3c;
-          font-family: 'Lora', serif;
-          margin-left: 40px;
+        font-size: 30px;
+    color: #204e3c;
+    font-family: 'Lora', serif;
+    margin-top: 100px
+;
+    margin-left: 40px;
+    margin-bottom: 0;
          
         }
         .product_detail-text{
@@ -53,9 +56,10 @@
         }
        
         .class-product-reviews{
-          font-size: 20px;
-          color: #204e3c;
-          margin-left: 40px;
+         font-size: 20px;
+    color: #204e3c;
+    margin: 0;
+    margin-left: 40px;
         }
 
         .class-product-img{
@@ -69,7 +73,7 @@
 
 
         .class-product-img:hover {
-  transform: scale(1.3); 
+  transform: scale(1.1); 
 }
         #id-class-product-price{
          background-color: #c0b6ad;
@@ -110,25 +114,27 @@
         }
         
         .class-product-button{
-          background-color: #204e3c;
-          width: 70%;
-         transition:width 1s;
-         height: 50px;
-         margin-bottom: 20px;
-             margin-left: 80px;
-         font-size: 15px;
-         font-weight: 50;
-         color: white; 
+        background-color: #204e3c;
+    width: 70%;
+    transition: width 1s;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    font-size: 20px;
+    font-weight: 50;
+    color: white;
+    border: none;
+}
 
-        }
+        
         
 
         
         .class-product-price{
-          font-weight: 300;
-          font-size:40px;
-          margin-left: 40px;
-          color: #204e3c;
+            font-weight: 300;
+    font-size: 25px;
+    margin-left: 40px;
+    color: #204e3c;
         }
         
         
@@ -310,7 +316,7 @@ background-color:#f7cfc1;
     .class-below-addtocard_btn  {
       display: flex;
       position: absolute;
-      right: 250px;
+      right: 45px;
       gap: 10px;
       font-size: 20px;
 
